@@ -1,5 +1,5 @@
 try {
-  require('imports?this=>global!./globals.js');
+  require('./globals.js');
 } catch (err) {}
 
 var Injection = require('react/lib/ReactInjection');
