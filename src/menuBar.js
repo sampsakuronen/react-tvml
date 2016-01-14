@@ -2,7 +2,6 @@
 
 var hasOwnProperty = require('has-own-prop');
 var assign = require('react/lib/Object.assign');
-var clone = require('lodash.clone');
 var Mount = require('./Mount');
 
 
@@ -24,7 +23,7 @@ var updateItemsIndex = function(ev, inst, props) {
       return [];
     }
 
-    return clone(menuBarsToItems[inst._rootNodeID]);
+    return menuBarsToItems[inst._rootNodeID];
   })();
 
   var childKeys = Object.keys(inst._renderedChildren);
